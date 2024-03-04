@@ -1,0 +1,92 @@
+/* CSS for govService 
+   Contains easily applied styles for infromation boxes and general headers and content  
+   Created: 19/10/21 by Richard Renshaw richard.renshaw@lbhf.gov.uk
+*/
+/* ALERT BOXES BELOW   */
+/*   */
+/* ALERT BOX  */
+.hf-alert-box {
+    padding: 15px 15px 15px 125px;
+    margin: 20px 0;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    display: block;
+    border-color: black;
+    color: #0a0a0a;
+    position: relative;
+    font-size: 12pt;
+    line-height: 12pt; 
+    height: auto;
+    width:auto;
+}
+.hf-alert-box:before {
+    padding-right: 20px;
+    font-family: FontAwesome;
+    content: "\ff5a"; /* Info in circle icon */
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%)
+}
+.hf-alert-box a:hover {
+        color: red !important;
+}
+.hf-alert-box a:before {
+    font-family: FontAwesome;
+    content: "\f0ac \00a0"; /* Globe icon */
+}
+.hf-info {
+    border-left: 10px solid LightBlue;
+}
+.hf-info:before {
+    content: "\f05a"; /* Info in circle icon */
+    color: LightBlue;
+}
+.hf-danger {
+    border-left: 10px solid red;
+}
+.hf-danger:before {
+    content: "\f06a"; /* Exclamation in circle icon */
+    color: red;
+}
+
+.hf-warning {
+    border-left: 10px solid orange;
+}
+.hf-warning:before {
+    content: "\f071"; /* Exclamation in triangle icon */
+    color: orange;
+}
+.hf-success {
+    border-left: 10px solid green;
+}
+.hf-success:before {
+    content: "\f058"; /* Tick in circle icon */
+    color: green;
+}
+.hf-fail {
+    border-left: 10px solid red;
+}
+.hf-fail:before {
+    content: "\f057"; /* Tick in circle icon */
+    color: red;
+}
+/* GENERAL INFOMATION 
+- Red header
+- Red hover links
+- Automatic hyperlink icons*/
+
+.hf-textgeneral {
+    background: inherit
+}
+.hf-textgeneral :is(h1,h2,h3,h4,h5) {
+    color:#d92644;
+}
+.hf-textgeneral a:hover {
+    color: #d92644 !important;
+}
+.hf-textgeneral a:before {
+    font-family: FontAwesome;
+    content: "\f0ac \00a0"; /* Globe icon */
+}
